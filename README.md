@@ -1,14 +1,14 @@
-python -m venv venv
-venv\scripts\activate
-cd backend 
-pip install -r requirements.txt
-//Змінити все в settings.py
-py manage.py migrate //Postgre install 
-py manage.py runserver
+python -m venv venv <br>
+venv\scripts\activate <br>
+cd backend  <br>
+pip install -r requirements.txt <br>
+//Змінити все в settings.py <br>
+py manage.py migrate //Postgre install  <br>
+py manage.py runserver <br>
 
-//Open another terminal 
-venv\scripts\activate 
-cd frontend
-npm i
-npm run
+//Open another terminal  <br>
+venv\scripts\activate  <br>
+cd frontend <br>
+npm i <br>
+npm run <br>
 
