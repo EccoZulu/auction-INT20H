@@ -1,0 +1,283 @@
+main {
+  min-height: 80vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Shopping Cart */
+
+.cart-item-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #343a40;
+  color: #fff;
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Profile screen */
+
+.edit-profile {
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    padding: 4px;
+    border: 0px;
+    box-shadow: rgba(93, 56, 192, 0.17) 0px 2px 4px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.divider {
+  width: 90%!important;
+}
+
+/* Address screen */
+
+.edit-address {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  border: 0px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.delete-address {
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  border: 0px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Category Section */
+
+.category-section {
+  display: flex;
+  width: 100%;
+}
+
+.category-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: small;
+}
+
+.category-section div {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.category-section div .arrow:hover {
+  background-color: rgba(187, 175, 175, 0.527);
+  border-radius: 45%;
+}
+
+.category-section li > ul {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+
+.category-section li > ul > li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.category-section li > ul > li > ul > li {
+  position: relative;
+  padding-left: 0;
+  max-width: 90%;
+}
+
+.category-section li > ul > li > ul > li:before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+
+  .category-section div {
+    padding: 0;
+  }
+
+  .category-section li > ul > li {
+    padding: 8px 8px;
+  }
+
+  .category-section li > ul > li > ul > li:before {
+    left: 0px;
+  }
+}
+
+/* Product Card */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card .card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card .card-text {
+  white-space: nowrap;
+  font-size: smaller;
+  height: 25px;
+  
+}
+
+.product-card .card-title {
+  font-size: smaller;
+  height: 25px;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 992px){
+  .product-card .feature {
+    white-space:normal;
+  }
+
+  .product-card .card-title {
+    height: 45px;
+  }
+
+  .product-card .card-text {
+    font-size: small;
+  }
+}
+
+@media (min-width: 1200px){
+  .product-card .feature {
+    white-space: nowrap;
+  }
+
+  .product-card .card-title {
+    height: 25px;
+  }
+
+  .product-card .card-text {
+    font-size: smaller;
+  }
+}
+
+/* Credit Card */
+
+.edit-card {
+  position: absolute;
+  height: 10px;
+  padding: 4px;
+  top: 50px;
+  right: 1px;
+}
+
+/* Carousel */
+
+.carousel-custom .carousel-indicators [data-bs-target] {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.carousel-custom .carousel-indicators {
+  bottom: -17px;
+}
+
+.carousel-custom .carousel-indicators button {
+  background-color: rgb(51, 51, 51)!important;
+  border-radius: 50%;
+  margin-right: 6px;
+  height: 6px;
+  width: 6px;
+  z-index: 2;
+}
+
+.carousel-custom .carousel-indicators .active {
+  box-shadow: 0px 0px 10px 4px rgba(199, 199, 199);
+  background-color: rgba(250, 250, 250)!important;
+}
+
+/* Selling Categories */
+
+.selling-categories {
+  display: flex;
+  width: 100%;
+}
+
+.selling-categories div :hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.selling-categories .sub-category :hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+/* Login Screen */
+
+.kpx_loginOr {
+	position: relative;
+	color: #aaa;
+	padding-top: 0.2em;
+}
+
+.kpx_loginOr div .kpx_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.kpx_loginOr .kpx_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}
+
+.social-button {
+  width: 5em!important;
+  height: 5em!important;
+}
